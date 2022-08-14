@@ -10,7 +10,7 @@
 
 ## f) Lastly, the last bit of code assigns each of the aformentioned four functions as elements in a List(), naming them accordingly to be access each function by name with '$', returning them to the parent environment
 
-makeCacheMatrix <- function(x = numeric()) { #a
+makeCacheMatrix <- function(x = matrix()) { #a
   i <- NULL 
   set <- function(y){ #b
     x <<- y
