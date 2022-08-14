@@ -8,7 +8,7 @@
 
 ## e) The final instruction getinverse() gets the inverse 'i'  from the parent environment set in the previous function function. 
 
-## f) Lastly, the last bit of code assigns each of the aformentioned four functions as elements in a List(), naming them accordingly to be access each function by name with '$', returning them to the parent environment
+## f) Lastly, the last bit of code assigns each of the aforementioned four functions as elements in a List(), naming them accordingly to be access each function by name with '$', returning them to the parent environment
 
 makeCacheMatrix <- function(x = matrix()) { #a
   i <- NULL 
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) { #a
     i <<- NULL
   }
   get <- function() x #c
-  setinverse <- function(solve) i <<- solve #d
+  setinverse <- function(inverse) i <<- inverse #d
   getinverse <- function() i #e
   list(set = set, get = get, #f
        setinverse = setinverse,
